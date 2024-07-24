@@ -1,13 +1,13 @@
-name: 'The name of your action here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Top Ten Test Getter'
+description: 'Gets the top ten longest tests from a Visual Studio trx test file, and posts them as a comment in the given pull request.'
+author: 'Jesse Prevey'
 
 # Define your inputs here.
 inputs:
-  milliseconds:
-    description: 'Your input description here'
+  test-results-xml:
+    description: 'The XML containing the test results.'
     required: true
-    default: '1000'
+  #maybe count of tests to get later?
 
 # Define your outputs here.
 outputs:
